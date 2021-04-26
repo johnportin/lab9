@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Example: Modifying the Content of HTML Elements</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <form action="customerBackend.php" onclick="validateOrder(['banana', 'dinosaur', 'puzzle'])" method='post'>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="">
+        <br>
+        
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password">
+        
+        <p>Select the quantity of product below that you would like to purchase:</p>
+        
+        <label for="banana">Bananas:</label>
+        <input type="text" id="banana" name="banana">
+        <br>
+        
+        <label for="dinosaur">Dinosaurs:</label>
+        <input type="text" id="dinosaur" name="dinosaur">
+        <br>
+        
+        <label for="puzzle">Puzzles:</label>
+        <input type="text" id="puzzle" name="puzzle">
+        <br>
+
+        <p>Select your shipping methods</p>
+          <input type='radio' id='free' name='shipping' value='free' >
+          <label for='free'>Free 7 day</label><br>
+
+          <input type='radio' id='overnight' name='shipping' value='overnight' >
+          <label for='overnight'>$50.00 over night</label><br>
+
+          <input type='radio' id='threeday' name='shipping' value='three day' >
+          <label for='threeday'>$5.00 three day </label><br>
+
+        
+        
+        <button type="button" onclick="resetAll(['username', 'password', 'banana', 'dinosaur', 'puzzle'])">Reset</button>
+        <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+    
+</body>
+<script src="./formChecker.js" ></script>
+
+
+</html>
